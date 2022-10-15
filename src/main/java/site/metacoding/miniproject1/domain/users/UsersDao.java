@@ -7,7 +7,7 @@ public interface UsersDao {
 	public void insert(Users users);
 	public List<Users> findAll();
 	public Users findById(Integer id);
-	public void update(Integer id, Users users);
+	public void update(Users users);
 	public void deleteById(Integer id);
 	
 	// 로그인을 위한 Dao
