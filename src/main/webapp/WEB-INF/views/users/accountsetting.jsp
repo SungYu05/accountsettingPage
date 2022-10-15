@@ -84,4 +84,5 @@
 		};
 	}
 </script>
+<script src="/js/users.js"></script>
 <%@ include file="../layout/footer.jsp"%>
