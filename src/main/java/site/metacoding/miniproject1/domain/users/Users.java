@@ -5,6 +5,7 @@ import java.sql.Timestamp;
 
 import lombok.Getter;
 import lombok.Setter;
+import site.metacoding.miniproject1.web.dto.request.users.UsersUpdateReqDto;
 
 @Setter
 @Getter
@@ -21,6 +22,12 @@ public class Users {
 	private Integer companyId;
 	private Integer mycareerId;
 	private Timestamp created;
+	
+	public void update(UsersUpdateReqDto updateReqDto) {
+		this.userName = updateReqDto.getUserName();
+		this.email = updateReqDto.getEmail();
+		this.phoneNumber = updateReqDto.getPhoneNumber();
+	}
 	
 	
 }
